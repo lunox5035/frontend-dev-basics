@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>마진과 패딩</title>
+<style type="text/css">
+*{ margin: 0; padding: 0 }
+body {
+	font-family: "돋움", "맑은 고딕";
+	font-size: 0.8em;
+	color: #333;
+}
+
+.box1 {
+	border: 1px solid #666;
+	width: 300px;
+	background-color: #FFC;
+	cursor-point:
+	
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	padding-left: 40px;
+	
+	padding 10px 20px 30px 40px;	/* Top Right Bottom Left*/
+	padding 10px 20px 30px;			/* Top (Right Left) Bottom*/
+	padding 10px 20px;				/* (Top Bottom) (Right Left)*/
+	padding 10px;					/*(Top Right Bottom Lef)*/
+	
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+	
+	margin 10px 20px 30px 40px;		/* Top Right Bottom Left*/
+	margin 10px 20px 30px;			/* Top (Right Left) Bottom*/
+	margin 10px 20px;				/* (Top Bottom) (Right Left)*/
+	margin 10px;					/*(Top Right Bottom Lef)*/
+	
+	/*중앙정렬 center align*/
+	margin-left: auto;
+	margin-right: auto;
+	
+	/*예제*/
+	margin-top: 200px
+	
+}
+</style>
+<script>
+function onClick() {
+	elDiv =document.getElementById("my-div")
+	console.log(elDiv);
+	elDiv.style.marginTop = "160px";
+}
+</script>
+</head>
+
+<body>
+	<div id="my-div" class="box1" onclick='onClick()'>
+		CSS에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이 어떻게 적용되는지 확인해 보겠습니다.
+	</div>
+</body>
+</html>
