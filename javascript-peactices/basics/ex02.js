@@ -97,4 +97,8 @@ console.log("f3:"+typeof(f3));
 console.log(f3(10,20));
 
 //유사객체?
-
+//원시타입에 메소드가 호출될때...
+//임시 Wrapper 객체가 만들어져서 메소드 호출이 일어난 뒤 사라진다.: 유사객체
+console.log("원시타입도 메소드 호출이 가능하다=====================");
+console.log(b.valueOf());//new Boolean(b).valueOf()
+console.log(b2.valueOf());
