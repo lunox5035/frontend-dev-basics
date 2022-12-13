@@ -19,9 +19,9 @@ console.log(false==0);
 console.log("abc"==new String('abc'));
 
 console.log(true+10);//11
-console.log('abc'+new String('abc'));
+console.log('abc'+new String('abc'));//'abcabc'
 console.log(1+'11');//'111'
-console.log('11'+1);
+console.log('11'+1);//'111'
 
 console.log("====================================");
 //=== : idenitity

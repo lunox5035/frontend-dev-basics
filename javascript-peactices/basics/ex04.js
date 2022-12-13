@@ -11,6 +11,34 @@
     -자바와 같은 블록 스코프를 지우너한다.
     -let 키워드를 붙혀서 블록 범위를 가지게 한다.
     -const 키워드는 블록 범위에 있는 상수에 적용한다.
-
+5.결론 
+    -const/let 만 사용하고 둘 중 하나를 **반드시**붙일것!
 */
+var i=10;
+var f= function(){
+    var i=20;
+    j=100;
+    console.log(i);
+    i=j-i;
+}
+f();
+console.log(i);
+console.log(j);
 
+console.log("====================================");
+
+console.log("===var 키워드는 함수 블록에서만 함수 범위를 만든다.")
+if(90+10===100){
+    var k=20;
+}
+
+console.log(k);
+
+{
+    let x=1000;
+    x=100;
+    //PI=0; []
+}
+
+//console.log(x); //nor defind error
+//console.log(); //nor defind error
