@@ -43,9 +43,10 @@ i2.another={
 }
 console.log(i2);
 
-i1.another={
+i1.another={        //유사객체로 실행: new Number(i1).another={}
     name:'마이콜',
     age:30
 }
 
-console.log(i1);
+console.log(i1);    //유사객체로 실행: new Number(i1).another
+
