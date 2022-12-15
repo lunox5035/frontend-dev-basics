@@ -78,6 +78,20 @@ console.log(n+":"+typeof(n));
     2.var f = function(){....}★☆★
     3.var f = new Function(....)
 */
+
+/*
+자바스크립트 객체를 분류하는 또다른 방법
+1.내장객체:
+	-JavaScript Engine 내부에 미리 내장되어있는 객체
+	-Number, Boolean, Date, RegExp, Array, Objext,...: 생성자함수
+	-parseInt, setTimeout, setInterval,... : 일반함수
+2.호스트객체:
+	-JavaScript Engine이 embeded되어 있는 환경에 있는 객체
+	-Brower가 호스트인 경우:	screen-☆, localtion☆, navigator☆, DOM☆☆☆, XmlHttpRequset☆☆☆, ....
+	-Node가 호스트인 경우:		http, os, fs, path, prosess, ....
+3.사용자 객체
+	-자바스크립트 엔징니 생행되면서 생성되는 객체
+*/
 console.log("===객체타입(function)==========================")
 
 function f1(a,b){
