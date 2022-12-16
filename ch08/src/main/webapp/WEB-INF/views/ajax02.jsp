@@ -10,18 +10,23 @@
 <script src='${pageContext.request.contextPath }/assets/js/jquery/jquery-3.6.0.js'></script>
 <script>
 $(function(){
+	var formData={
+			name= "여관규",
+			email= "bbc02131@nave.com",
+			password: "1234",
+			gender: "male"
+	}
+	
 	$("#btn-getdata").click(function(){
 		$.ajax({
-			url: "${pageContext.request.contextPath }/api/01",
+			url: "${pageContext.request.contextPath }/api/02",
 			async: true,
-			type: "get",
+			type: "POST",
 			dataType: "json",
+			contentType: "application/x-www-form-urlencoded",
+			data: $param(formData),
 			success: function(response){
-				var html= "";
-				html+=("<h1>"+response.name+"</h1>");
-				html+=("<h1>"+response.age+"</h1>");
-				
-				$("#data").html(htmls);
+				console.log(response);
 			},
 			error: function(xhr, status, error) {
 				console.error(status, error);
